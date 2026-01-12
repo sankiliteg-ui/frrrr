@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankku Dii & Shubham Bhaiya | The Iconic Duo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.1);
+            --border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* Glass Cards */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: #fff; /* Placeholder bg */
+        }
+
+        .role {
+            display: inline-block;
+            background: white;
+            color: #e73c7e;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section */
+        .memories {
+            margin-top: 80px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            height: 200px;
+            background: var(--glass);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .card-container { flex-direction: column; align-items: center; }
+            .glass-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Ankku Dii & Shubham Bhaiya</h1>
+            <div class="subtitle">Partners In Crime &bull; Best Friends Forever</div>
+        </header>
+
+        <div class="card-container">
+            
+            <div class="glass-card">
+                <img src="ankku dii.jpg" alt="Ankku Dii" class="profile-img">
+                <h2>Ankku Dii</h2>
+                <span class="role">The Boss Lady</span>
+                <p>Always caring, slightly dramatic, and the one who keeps everything in check. The guiding light of the duo.</p>
+                <div class="socials">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <img src="SHUBHAM.jpeg" alt="Shubham Bhaiya" class="profile-img">
+                <h2>Shubham Bhaiya</h2>
+                <span class="role">The Cool One</span>
+                <p>The problem solver, the joke cracker, and the ultimate support system. Always there when you need him.</p>
+                <div class="socials">
+                    <i class="fas fa-bolt"></i>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="memories">
+            <h2><i class="fas fa-camera-retro"></i> Our Memories</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="gallery-item"><i class="fas fa-music"></i></div>
+                <div class="gallery-item"><i class="fas fa-plane"></i></div>
+                <div class="gallery-item"><i class="fas fa-coffee"></i></div>
+            </div>
+            <p style="margin-top: 20px;">"Friendship is not about who you've known the longest. It's about who walked into your life and said, 'I'm here for you' and proved it."</p>
+        </div>
+
+        <footer>
+            Created with ❤️ for Ankku & Shubham
+        </footer>
+
+    </div>
+
+    <script>
+        // A simple script to add a tilt effect to the cards
+        const cards = document.querySelectorAll('.glass-card');
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.2), rgba(255,255,255,0.1))`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.background = 'rgba(255, 255, 255, 0.1)';
+            });
+        });
+    </script>
+</body>
+</html>
